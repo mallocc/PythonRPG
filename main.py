@@ -13,6 +13,7 @@ from npc import *
 
 from random import randint
 
+
 class Game:
     def __init__(self):
         self.context = Context(MAGENTA, R600, 60, "Game")
@@ -44,19 +45,20 @@ class Game:
     def draw(self):
         self.context.startDraw()
 
+        self.context.drawMap((11, 11))
+        
         self.player.draw(self.context)
         for ent in self.entities:
             ent.draw(self.context)
 
-        self.context.drawMap((11, 11))
         self.context.endDraw()
 
 
 game = Game()
 game.addEntity(NPC((0, 0), game.context.imageManager.getAnimationDup(
-    "greenSprite")), False, True)
+    "greenSprite"), False, True))
 game.addEntity(
-    NPC((0, 0), game.context.imageManager.getAnimationDup("redSprite")), False)
+    NPC((0, 0), game.context.imageManager.getAnimationDup("redSprite"), False))
 
 ### Main loop ###
 while True:
