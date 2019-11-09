@@ -1,0 +1,84 @@
+{
+    "images": [
+        {
+            "name": "null",
+            "path": "nulltex.png"
+        },
+        {
+            "name": "sprites",
+            "path": "sprites.png"
+        },
+        {
+            "name": "grasstile",
+            "path": "grass_lowres.jpg"
+        }
+    ],
+    "sprites": [
+        {
+            "name": "greenSpriteFrame1",
+            "imageName": "sprites",
+            "position": {
+                "x": 0,
+                "y": 32
+            },
+            "size": {
+                "x": 32,
+                "y": 32
+            }
+        },
+        {
+            "name": "greenSpriteFrame2",
+            "imageName": "sprites",
+            "position": {
+                "x": 32,
+                "y": 32
+            },
+            "size": {
+                "x": 32,
+                "y": 32
+            }
+        },
+        {
+            "name": "redSpriteFrame1",
+            "imageName": "sprites",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "size": {
+                "x": 32,
+                "y": 32
+            }
+        },
+        {
+            "name": "redSpriteFrame2",
+            "imageName": "sprites",
+            "position": {
+                "x": 32,
+                "y": 0
+            },
+            "size": {
+                "x": 32,
+                "y": 32
+            }
+        }
+    ],
+    "animations": [
+        {
+            "name": "greenSprite",
+            "frequency": 30,
+            "frames": [
+                "greenSpriteFrame1",
+                "greenSpriteFrame2"
+            ]
+        },
+        {
+            "name": "redSprite",
+            "frequency": 10,
+            "frames": [
+                "redSpriteFrame1",
+                "redSpriteFrame2"
+            ]
+        }
+    ]    
+}
